@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#411C37"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/addbill_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/addbill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Bill"
+            android:textColor="#F3B098"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/addbill_inputlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="8dp"
+        android:background="#523049"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/addbill_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#EC7076"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Bill Name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/addbill_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#EC7076"
+            android:ems="10"
+            android:inputType="date"
+            android:text="Due Date"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/addbill_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#EC7076"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="Amount"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addbill_payeelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="#523049"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/addbill_payeelist_titlebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#EC7076"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/addbill_payeelist_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Payee"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/addbill_addpayee_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:background="#EC7076"
+                android:text="+" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbill_payeelist_payee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#EC7076">
+
+                <TextView
+                    android:id="@+id/addbill_payeelist_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Payee Name"
+                    android:textSize="18sp"/>
+
+                <CheckBox
+                    android:id="@+id/addbill_payeelist_add_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+
+    </LinearLayout>
