@@ -6,7 +6,7 @@
     android:background="#411C37">
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/login_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_above="@+id/login"
@@ -23,7 +23,7 @@
         android:background="#EC7076">
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/login_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -35,7 +35,7 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/login_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/username"
@@ -50,7 +50,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button_newuser"
+        android:id="@+id/login_button_newuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"

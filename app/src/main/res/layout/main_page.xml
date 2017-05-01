@@ -12,7 +12,7 @@
         android:background="#411C37">
 
         <ImageView
-            android:id="@+id/logo"
+            android:id="@+id/main_logo"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_centerHorizontal="true"
@@ -20,7 +20,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/payment_titlebar"
+        android:id="@+id/main_payment_titlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
@@ -29,7 +29,7 @@
 
 
         <TextView
-            android:id="@+id/payment_title"
+            android:id="@+id/main_payment_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Payments"
@@ -40,12 +40,13 @@
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/main_paymentlist_scrollview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
         <LinearLayout
-            android:id="@+id/payment_list"
+            android:id="@+id/main_paymentlist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="24dp"
@@ -56,13 +57,13 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/payment_display"
+                android:id="@+id/main_paymentdisplay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#EC7076">
 
                 <ImageView
-                    android:id="@+id/payment_icon"
+                    android:id="@+id/main_paymentdisplay_icon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
@@ -70,10 +71,10 @@
                     app:srcCompat="@drawable/share_icon" />
 
                 <TextView
-                    android:id="@+id/payment_payee_name"
+                    android:id="@+id/main_paymentdisplay_payeename"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/payment_icon"
+                    android:layout_toEndOf="@+id/main_paymentdisplay_icon"
                     android:layout_centerVertical="true"
                     android:text="Payee Name"
                     android:textSize="18sp"
@@ -83,17 +84,17 @@
                      />
 
                 <TextView
-                    android:id="@+id/payment_amount"
+                    android:id="@+id/main_paymentdisplay_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/payment_payee_name"
+                    android:layout_toRightOf="@id/main_paymentdisplay_payeename"
                     android:layout_centerVertical="true"
                     android:text="$0.00"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/payment_owed_name"
+                    android:id="@+id/main_paymentdisplay_owedname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -111,7 +112,7 @@
     </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/bill_titlebar"
+        android:id="@+id/main_bill_titlebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
@@ -120,33 +121,35 @@
 
 
         <TextView
-            android:id="@+id/bill_title"
+            android:id="@+id/main_bill_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:text="Bills"
             android:textColor="#F3B098"
             android:textSize="32sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/bill_addbill_button"
+            android:id="@+id/main_addbill_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/add_bill_dark" />
 
     </RelativeLayout>
 
     <ScrollView
+        android:id="@+id/main_billlist_scrollview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
 
         <LinearLayout
-            android:id="@+id/bill_list"
+            android:id="@+id/main_billlist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="24dp"
@@ -157,13 +160,13 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/bill_display"
+                android:id="@+id/main_billdisplay"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#EC7076">
 
                 <ImageView
-                    android:id="@+id/bill_icon"
+                    android:id="@+id/main_billdisplay_icon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_alignParentLeft="true"
@@ -171,27 +174,27 @@
                     app:srcCompat="@drawable/bill_icon2" />
 
                 <TextView
-                    android:id="@+id/bill_name"
+                    android:id="@+id/main_billdisplay_billname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:layout_toRightOf="@+id/bill_icon"
+                    android:layout_toRightOf="@+id/main_billdisplay_icon"
                     android:text="Bill Name"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/payee_name"
+                    android:id="@+id/main_billdisplay_payeename"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/bill_name"
+                    android:layout_below="@+id/main_billdisplay_billname"
                     android:layout_marginLeft="8dp"
-                    android:layout_toRightOf="@+id/bill_icon"
+                    android:layout_toRightOf="@+id/main_billdisplay_icon"
                     android:text="Payee" />
 
 
                 <TextView
-                    android:id="@+id/amount"
+                    android:id="@+id/main_billdisplay_amount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
