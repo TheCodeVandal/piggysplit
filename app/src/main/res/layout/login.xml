@@ -47,6 +47,15 @@
             android:inputType="textPassword"
             android:text="password"
             android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/login_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password"
+            android:layout_centerHorizontal="true"
+            android:background="#EC7076"
+            android:text="LOGIN" />
     </LinearLayout>
 
     <Button
