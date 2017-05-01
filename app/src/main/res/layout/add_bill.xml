@@ -96,8 +96,8 @@
             android:orientation="vertical">
 
 
-            <TextView
-                android:id="@+id/addbill_payeelist_title"
+            <EditText
+                android:id="@+id/addbill_addpayee_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Payee"
@@ -109,7 +109,8 @@
                 android:layout_height="32dp"
                 android:layout_alignParentRight="true"
                 android:background="#EC7076"
-                android:text="+" />
+                android:text="+"
+                android:onClick="addPayee"/>
 
         </RelativeLayout>
 
